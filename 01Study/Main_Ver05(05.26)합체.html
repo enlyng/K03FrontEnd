@@ -52,6 +52,7 @@
     .subHeader {
       display: inline-block;
       position: relative;
+      padding-left: 0;
       /* border: 1px solid red; */
     }
     .Main_img {
@@ -208,13 +209,13 @@
       border: 1px solid #5973e1;
       background-color: white;
       text-align: center;
-      font-size: 23px;
+      font-size: 20px;
       font-weight: bold;
       padding-top: 10px;
       padding-left: 30px;
       padding-right: 30px;
-      margin-left: 30px;
-      min-width: 200px;
+      margin-left: 35px;
+      min-width: 210px;
     }
   </style>
   <body>
@@ -245,7 +246,7 @@
       </div>
     </nav>
     <!-- subHeader -->
-    <div class="container-fluid" style="padding-left: 0">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0">
       <div class="container">
         <nav class="navbar subHeader navbar-expand-sm bg-white pt-1 pb-0">
           <div class="container">
@@ -352,7 +353,7 @@
         "
       >
         <div class="tab-pane container active" id="home">
-          <a href="http://localhost:8081/01Study/Main_Ver02.html"></a>
+          <a href="http://localhost:8081/Main_Ver02.html"></a>
         </div>
         <!-- 민원 하단바 -->
         <div
@@ -652,6 +653,7 @@
                 "
                 placeholder="찾으시는 검색어를 입력하세요"
               />
+
               <!-- <button style="border: 0; background-color: #5193f6; position: absolute">
                 <a href="#inputpart" style="color: white; font-size: 25px; font-weight: 400">찾으시는 검색어를 입력하세요</a>
               </button> -->
@@ -664,29 +666,59 @@
             </div>
           </div>
         </div>
-
         <!-- 전체 메뉴 하단바 -->
         <div
           class="tab-pane container fade"
           id="menu8"
-          style="padding-top: 40px; background-color: #f0f3f9"
+          style="
+            padding-top: 40px;
+            margin-left: 230px;
+            background-color: #f0f3f9;
+            width: 1200px;
+          "
         >
-          <div style="display: inline-block; height: 570px; padding-left: 80px">
-            <div style="display: flex" style="margin: 0">
-              <div class="container whole_each_menu">민원</div>
+          <div
+            style="
+              display: flex;
+              height: 570px;
+              width: 1180px;
+              text-align: center;
+            "
+          >
+              <div class="container whole_each_menu">
+                민원
+                <div style="font-weight: normal; font-size:17px">
+                  일반민원
+                  <li><a href="">민원신청</a></li>
+                  <li><a href="">민원질의응답.답변원문</a></li>
+                  <li><a href="">정책 통합조회</a></li>
+                  <span></span>
+                  
+                </div>
+              </div>
               <div class="container whole_each_menu">민원상담</div>
               <div class="container whole_each_menu">예산낭비</div>
               <div class="container whole_each_menu">국민제안</div>
               <div class="container whole_each_menu">국민생각함</div>
-            </div>
+          </div>
           </div>
         </div>
-
-        <!-- 전체 메뉴 -->
-        <div class="tab-pane container fade" id="menu8"></div>
       </div>
       <!-- assist_menu -->
       <div class="container">
+        <div
+          style="
+            position: absolute;
+            display: inline-block;
+            top: 200px;
+            left: 520px;
+            font-size: 3em;
+            z-index: 1;
+          "
+        >
+          <strong>국민의 작은 소리도</strong><br />
+          크게 듣겠습니다.
+        </div>
         <nav class="navbar" style="z-index: 2">
           <!-- Search_Bar -->
           <div
@@ -771,7 +803,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="../01Study/images/page_image01.jpg"
+                  src="./images/page_image01.jpg"
                   alt="국민정책패널 모집"
                   class="d-block"
                   style="width: 100; height: 100"
@@ -779,7 +811,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="../01Study/images/page_image02.jpg"
+                  src="./images/page_image02.jpg"
                   alt="청소년 청년 아이디어 경진대회"
                   class="d-block"
                   style="width: 100; height: 100"
@@ -787,7 +819,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="../01Study/images/page_image03.jpg"
+                  src="./images/page_image03.jpg"
                   alt="유가족 찾기"
                   class="d-block"
                   style="width: 100; height: 100"
@@ -795,7 +827,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="../01Study/images/page_image04.jpg"
+                  src="./images/page_image04.jpg"
                   alt="공익침해혐의 집중신고기간"
                   class="d-block"
                   style="width: 100; height: 100"
